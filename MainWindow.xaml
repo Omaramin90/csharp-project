@@ -1,0 +1,44 @@
+﻿<Window x:Class="PIZZAAPP3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIZZAAPP3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="746.677" Width="892.892" Background="#FF060000" Foreground="#FFF9F4F4">
+    <Grid HorizontalAlignment="Left" Height="349" VerticalAlignment="Top" Width="721" Margin="37,37,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="697*"/>
+            <ColumnDefinition Width="24*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="O's Pizza Shop" HorizontalAlignment="Left" Margin="220,42,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48" RenderTransformOrigin="0.341,0.417" Height="108" Width="491" FontFamily="Script MT Bold" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="663,10,-42,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="2.657,0.18" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="120" Margin="557,30,0,0" VerticalAlignment="Top" Width="106" Source="https://z.dam-img.rfdcontent.com/offers/011/245/248/600x600_smart_fit.jpg" RenderTransformOrigin="-0.146,0.413"/>
+        <Label Content="Size" HorizontalAlignment="Left" Margin="37,200,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Script MT Bold" Height="83" Width="167"/>
+        <Label Content="Toppings" HorizontalAlignment="Left" Margin="363,200,0,0" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Script MT Bold" RenderTransformOrigin="0.504,0.44" Width="254" Height="100"/>
+        <Label Content="Crust" Margin="202,200,339,0" VerticalAlignment="Top" Foreground="White" FontSize="25" FontFamily="Script MT Bold"/>
+        <Label Content="Sides" HorizontalAlignment="Left" Margin="549,200,0,0" VerticalAlignment="Top" Width="147" Foreground="White" FontSize="25" FontFamily="Script MT Bold" Height="87"/>
+        <RadioButton x:Name="rbSmall" Content="Small $4.99" HorizontalAlignment="Left" Height="51" Margin="37,273,0,0" VerticalAlignment="Top" Foreground="#FFF9F7F7" Checked="rbSmall_Checked" FontFamily="Gill Sans MT Condensed"/>
+        <RadioButton x:Name="rbMed" Content="Medium $9.99" HorizontalAlignment="Left" Height="51" Margin="37,310,0,-12" VerticalAlignment="Top" Foreground="#FFF9F7F7" Checked="rbMed_Checked" FontFamily="Gill Sans MT Condensed" RenderTransformOrigin="0.491,2.184"/>
+        <RadioButton x:Name="rbLarge" Content="Large $14.99" HorizontalAlignment="Left" Height="51" Margin="37,351,0,-53" VerticalAlignment="Top" Foreground="#FFF9F7F7" Checked="rbLarge_Checked" FontFamily="Gill Sans MT Condensed" RenderTransformOrigin="0.491,2.184"/>
+        <RadioButton x:Name="rbXL" Content="Extra Large $19.99" HorizontalAlignment="Left" Height="51" Margin="37,392,0,-94" VerticalAlignment="Top" Foreground="#FFF9F7F7" Checked="rbXL_Checked"  FontFamily="Gill Sans MT Condensed" RenderTransformOrigin="0.491,2.184"/>
+        <CheckBox x:Name="cbPineapple" Checked="cbPineapple_Checked" Unchecked="cbPineapple_Checked" HorizontalAlignment="Left" Height="74" Margin="363,273,0,0" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Content="Pineapple" RenderTransformOrigin="0.438,0.563"/>
+        <CheckBox x:Name="cbChicken" Content="Chicken" HorizontalAlignment="Left" Height="74" Margin="363,310,0,-35" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Checked="cbChicken_Checked" Unchecked="cbChicken_Checked"/>
+        <CheckBox x:Name="cbBeef" Content="Beef" Checked="cbBeef_Checked" Unchecked="cbBeef_Checked" HorizontalAlignment="Left" Height="74" Margin="363,351,0,-76" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed"/>
+        <CheckBox x:Name="cbOnion" Content="Onions" Checked="cbOnion_Checked" Unchecked="cbOnion_Checked" HorizontalAlignment="Left" Height="74" Margin="363,392,0,-117" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed"/>
+        <CheckBox x:Name="cbGreenPepper" Content="Green Peppers" Checked="cbGreenPepper_Checked" Unchecked="cbGreenPepper_Checked"  HorizontalAlignment="Left" Height="74" Margin="363,430,0,-155" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed"/>
+        <CheckBox x:Name="cbTomato" Content="Tomato" Checked="cbTomato_Checked" Unchecked="cbTomato_Checked" HorizontalAlignment="Left" Height="74" Margin="363,471,0,-196" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed"/>
+        <CheckBox x:Name="cbPop" Content="Pop $1.50" Checked="cbPop_Checked" Unchecked="cbPop_Checked"  HorizontalAlignment="Left" Height="74" Margin="554,273,-19,0" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="cbChickenWings" Content="Chicken Wings $7.99" Checked="cbChickenWings_Checked" Unchecked="cbChickenWings_Checked"  HorizontalAlignment="Left" Height="74" Margin="554,314,-112,-39" VerticalAlignment="Top" Width="279" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="cbGarlicBread" Content="Garlic Bread $4.99" Checked="cbGarlicBread_Checked" Unchecked="cbGarlicBread_Checked"  HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="279" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Margin="554,351,-112,-76" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="cbFries" Content="Fries $3.99" Checked="cbFries_Checked" Unchecked="cbFries_Checked" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="186" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Margin="554,392,-19,-117" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="cbWedges" Content="Potato Wedges $6.99" Checked="cbWedges_Checked" Unchecked="cbWedges_Checked"  HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="109" Foreground="#FFFDFDFD" FontFamily="Gill Sans MT Condensed" Margin="554,433,0,-117"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="120" Margin="10,42,-76,0" VerticalAlignment="Top" Width="90" Source="https://cdn5.vectorstock.com/i/1000x1000/35/89/halal-logo-emblem-halal-sign-certificate-vector-14043589.jpg"/>
+        <Label x:Name="lblTotal1" Content="" HorizontalAlignment="Left" Height="41" Margin="619,533,-45,-225" VerticalAlignment="Top" Width="147" RenderTransformOrigin="0.556,0.527" Foreground="White" FontSize="20" FontFamily="Gill Sans MT Condensed" Grid.ColumnSpan="2" Background="Black"/>
+        <Label x:Name="lblTax" Content="" HorizontalAlignment="Left" Height="36" Margin="619,579,-21,-266" VerticalAlignment="Top" Width="123" Foreground="White" FontSize="20" Grid.ColumnSpan="2" FontFamily="Gill Sans MT Condensed"/>
+        <Label x:Name="lblGrandTotal" Content="" HorizontalAlignment="Left" Height="39" Margin="619,620,-45,-310" VerticalAlignment="Top" Width="147" FontSize="20" Foreground="#FFECE5E5" Grid.ColumnSpan="2" FontFamily="Gill Sans MT Condensed"/>
+        <RadioButton x:Name="rbThin" Content="Thin $0.99" HorizontalAlignment="Left" Margin="202,269,0,0" VerticalAlignment="Top" Foreground="White" Checked="rbThin_Checked" FontFamily="Gill Sans MT Condensed"/>
+        <RadioButton x:Name="rbThick" Content="Thick $1.99" HorizontalAlignment="Left" Margin="204,310,0,0" VerticalAlignment="Top" Foreground="White" Checked="rbThick_Checked" FontFamily="Gill Sans MT Condensed"/>
+        <Button x:Name="placeorder" Grid.ColumnSpan="2" Content="Place Order!" HorizontalAlignment="Left" Height="38" Margin="619,466,-53,-155" VerticalAlignment="Top" Width="155" Background="#FF3E3B3B" FontFamily="Script MT Bold" FontSize="20" Click="placeorder_Click"/>
+    </Grid>
+</Window>
